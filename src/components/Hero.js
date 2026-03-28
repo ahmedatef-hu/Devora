@@ -110,10 +110,10 @@ const Hero = () => {
         />
         
         {/* Floating particles */}
-        {[...Array(20)].map((_, i) => (
+        {[...Array(10)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 bg-blue-500/30 rounded-full"
+            className="absolute w-2 h-2 rounded-full bg-blue-500/30"
             animate={{
               y: [0, -100, 0],
               x: [0, Math.random() * 100 - 50, 0],

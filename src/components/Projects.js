@@ -144,7 +144,7 @@ const Projects = () => {
         />
         
         {/* Floating particles */}
-        {[...Array(25)].map((_, i) => (
+        {[...Array(10)].map((_, i) => (
           <motion.div
             key={i}
             className="absolute w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500"

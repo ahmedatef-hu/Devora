@@ -76,7 +76,7 @@ const Contact = () => {
         />
         
         {/* Floating particles */}
-        {[...Array(20)].map((_, i) => (
+        {[...Array(8)].map((_, i) => (
           <motion.div
             key={i}
             className="absolute w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"

@@ -112,23 +112,22 @@ const Services = () => {
         />
         
         {/* Floating particles */}
-        {[...Array(30)].map((_, i) => (
+        {[...Array(10)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 rounded-full"
+            className="absolute w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"
             style={{
-              background: `linear-gradient(135deg, ${services[i % 4].glowColor}, transparent)`,
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
             }}
             animate={{
-              y: [0, -150, 0],
-              x: [0, Math.random() * 100 - 50, 0],
-              opacity: [0, 0.8, 0],
-              scale: [0, 1.5, 0],
+              y: [0, -120, 0],
+              x: [0, Math.random() * 80 - 40, 0],
+              opacity: [0, 0.7, 0],
+              scale: [0, 1.2, 0],
             }}
             transition={{
-              duration: Math.random() * 8 + 5,
+              duration: Math.random() * 6 + 4,
               repeat: Infinity,
               delay: Math.random() * 5,
               ease: 'easeInOut',
